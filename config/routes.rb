@@ -4,6 +4,7 @@
 # application renamed to pages - expected new pages file in app/controller
 
 Rails.application.routes.draw do
+  resources :articles
   root "pages#alphahome"  
   get "about", to: "pages#aboutalpha"
 end
